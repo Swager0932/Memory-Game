@@ -1,5 +1,5 @@
 const tilesHolder = document.querySelector('.tiles');
-const colors = ["crimson",'gold',"chartreuse",'blue',"pink",'cyan',"coral", 'grey'];
+const colors = ["crimson",'gold',"chartreuse",'blue',"pink",'cyan',"orange", 'grey'];
 const colorPicker = [...colors, ...colors];
 const tileNumber = colorPicker.length
 
@@ -13,7 +13,6 @@ let waitEndMove = false
 function buildTile(color){
     const element = document.createElement("div");
 
-    // 13:24 ... lost me there I ain't gon hold u.
     element.classList.add("tile")
     element.setAttribute("data-color", color)
     element.setAttribute("data-revealed","false")
